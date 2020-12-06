@@ -1,0 +1,36 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+backoff = "*"
+blinker = "*"
+flask = "*"
+flask-cors = "*"
+gevent = "*"
+gunicorn = "*"
+pycryptodome = "*"
+pyjwt = "*"
+python-jose = "*"
+requests = "*"
+secure = "*"
+warrant = "*"
+flask-sqlalchemy = "*"
+psycopg2-binary = "*"
+
+
+[dev-packages]
+faker = "*"
+pre-commit = "*"
+pytest = "*"
+pytest-cov = "*"
+pyyaml = {editable = true,ref = "4.2b2",git = "https://github.com/yaml/pyyaml.git"}
+ # ^ Security patch. Not real dependency. Remove version freeze when out of beta.
+ # ^. Also, have to convert to editable in order to specificy pre-release for a single package.
+urllib3_mock = "*"
+webtest = "*"
+pylint = "*"
+
+[requires]
+python_version = "3.7.2"

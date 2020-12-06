@@ -1,0 +1,8 @@
+.circleci/
+.mypy_cache/
+.postgres-data/
+.pytest_cache/
+.venv/
+venv/
+htmlcov/
+tests/
